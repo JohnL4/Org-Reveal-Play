@@ -1,0 +1,58 @@
+#+TITLE: Holy Cow!
+
+#+REVEAL_HLEVEL: 2
+#+REVEAL_THEME: solarized
+#+OPTIONS: toc:nil num:nil
+# Suppress the normal customized CSS I use with org:
+#+HTML_HEAD:
+
+* Any Fool* Can Make a Presentation
+
+#+ATTR_REVEAL: :frag t
+  *Who knows =emacs= and =org-mode= :)
+
+* With Some Simple Text:
+
+  #+BEGIN_NOTES
+  Using =#+BEGIN_SRC org= makes the output be highlighted using whatever highlighting is active for org-mode, which may
+  include some personal configuration.
+  #+END_NOTES
+
+  #+BEGIN_SRC org
+    ,#+TITLE: Holy Cow!
+
+    ,#+REVEAL_HLEVEL: 2
+    ,#+REVEAL_THEME: solarized
+    ,#+OPTIONS: toc:nil num:nil
+    # Suppress the normal customized CSS I use with org:
+    ,#+HTML_HEAD:
+
+    ,* Any Fool* Can Make a Presentation
+
+    ,#+ATTR_REVEAL: :frag t
+      ,*Who knows =emacs= and =org-mode= :)
+
+    ,* With Some Simple Text:
+
+      ,#+BEGIN_EXAMPLE
+      (infinite recursion begins here.)
+      ,#+END_EXAMPLE
+  #+END_SRC 
+
+* Links, Details
+
+  - Emacs
+    - https://www.gnu.org/software/emacs/index.html
+    - Here be dragons
+  - Org-mode
+    - http://orgmode.org
+    - Here be more dragons
+  - Org-reveal (a.k.a. =ox-reveal=)
+    - https://github.com/yjwen/org-reveal
+    - Baby dragons.  Once you've conquered the first two, this is child's play.
+
+* John's Special Stuff
+
+  - Set =HTML_HEAD= to the empty string to suppress the /eXtRa-FaNcY/ CSS I inject into my normal org-mode output.
+
+  - That's about it.

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Holy Cow!</title>
+<meta name="author" content="(John Lusk)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///c:/usr/local/reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///c:/usr/local/reveal/css/theme/solarized.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///c:/usr/local/reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Holy Cow!</h1><h2 class="author">John Lusk</h2><p class="date">Created: 2017-02-22 Wed 14:54</p>
+</section>
+
+<section>
+<section id="slide-org41b0454">
+<h2 id="org41b0454">Any Fool* Can Make a Presentation</h2>
+<p class="fragment">
+*Who knows <code>emacs</code> and <code>org-mode</code> :)
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb735adc">
+<h2 id="orgb735adc">With Some Simple Text:</h2>
+<aside class="notes">
+<p>
+Using <code>#+BEGIN_SRC org</code> makes the output be highlighted using whatever highlighting is active for org-mode, which may
+include some personal configuration.
+</p>
+
+</aside>
+
+<div class="org-src-container">
+
+<pre  class="src src-org"><span style="color: #7f7f7f;">#+TITLE:</span> <span style="color: #191970; font-weight: bold;">Holy Cow!</span>
+
+<span style="color: #36648b; font-style: italic;">#+REVEAL_HLEVEL: 2</span>
+<span style="color: #36648b; font-style: italic;">#+REVEAL_THEME: solarized</span>
+<span style="color: #36648b; font-style: italic;">#+OPTIONS: toc:nil num:nil</span>
+<span style="color: #36648b; font-style: italic;"># Suppress the normal customized CSS I use with org:</span>
+<span style="color: #36648b; font-style: italic;">#+HTML_HEAD:</span>
+
+<span style="color: #0046a7; background-color: #b8d6ff; font-weight: bold;">* Any Fool* Can Make a Presentation</span>
+
+<span style="color: #36648b; font-style: italic;">#+ATTR_REVEAL: :frag t</span>
+  *Who knows <span style="color: #00008b;">=emacs=</span> and <span style="color: #00008b;">=org-mode=</span> :)
+
+<span style="color: #0046a7; background-color: #b8d6ff; font-weight: bold;">* With Some Simple Text:</span>
+
+<span style="color: #36648b; font-style: italic;">  #+BEGIN_EXAMPLE</span>
+  (infinite recursion begins here.)
+<span style="color: #36648b; font-style: italic;">  #+END_EXAMPLE</span>
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org8f6082c">
+<h2 id="org8f6082c">Links, Details</h2>
+<ul>
+<li>Emacs
+<ul>
+<li><a href="https://www.gnu.org/software/emacs/index.html">https://www.gnu.org/software/emacs/index.html</a></li>
+<li>Here be dragons</li>
+
+</ul></li>
+<li>Org-mode
+<ul>
+<li><a href="http://orgmode.org/">http://orgmode.org/</a></li>
+<li>Here be more dragons</li>
+
+</ul></li>
+<li>Org-reveal (a.k.a. <code>ox-reveal</code>)
+<ul>
+<li><a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a></li>
+<li>Baby dragons.  Once you've conquered the first two, this is child's play.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8f50074">
+<h2 id="org8f50074">John's Special Stuff</h2>
+<ul>
+<li>Set <code>HTML_HEAD</code> to the empty string to suppress the <i>eXtRa-FaNcY</i> CSS I inject into my normal org-mode output.</li>
+
+<li>That's about it.</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///c:/usr/local/reveal/lib/js/head.min.js"></script>
+<script src="file:///c:/usr/local/reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:///c:/usr/local/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///c:/usr/local/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///c:/usr/local/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///c:/usr/local/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///c:/usr/local/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
