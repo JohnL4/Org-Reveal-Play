@@ -2,4 +2,13 @@
 
   This is just a stupid, simple presentation using [[https://github.com/yjwen/org-reveal][org-reveal]].
 
+  Could also use the following header:
+  
+  #+BEGIN_EXAMPLE
+#+REVEAL_HLEVEL: 1
+# #+REVEAL_THEME: solarized
+#+OPTIONS: toc:nil num:nil author:nil timestamp:nil
+# Suppress the normal customized CSS I use with org:
+#+HTML_HEAD:
+  #+END_EXAMPLE
   
