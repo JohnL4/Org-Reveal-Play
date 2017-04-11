@@ -1,8 +1,8 @@
 #+TITLE: Holy Cow!
 
 #+REVEAL_HLEVEL: 2
-#+REVEAL_THEME: solarized
-#+OPTIONS: toc:nil num:nil
+# #+REVEAL_THEME: solarized
+#+OPTIONS: toc:nil num:nil author:nil timestamp:nil
 # Suppress the normal customized CSS I use with org:
 #+HTML_HEAD:
 
@@ -18,7 +18,7 @@
   include some personal configuration.
   #+END_NOTES
 
-  #+BEGIN_SRC org
+  #+BEGIN_SRC org -n
     ,#+TITLE: Holy Cow!
 
     ,#+REVEAL_HLEVEL: 2
@@ -35,9 +35,11 @@
     ,* With Some Simple Text:
 
       ,#+BEGIN_EXAMPLE
-      (infinite recursion begins here.)
+      (infinite recursion begins here.) # (ref:gnu)
       ,#+END_EXAMPLE
-  #+END_SRC 
+  #+END_SRC
+
+  Remember: [[(gnu)]]'s not Unix.
 
 * Links, Details
 
