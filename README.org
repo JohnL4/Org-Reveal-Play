@@ -12,3 +12,24 @@
 #+HTML_HEAD:
   #+END_EXAMPLE
   
+Or
+
+  #+BEGIN_EXAMPLE
+#+TITLE: TypeScript
+#+DESCRIPTION: Notes from a lunch-n-learn I gave on <2017-10-17 Tue>
+#+AUTHOR: John Lusk
+#+DATE: <2017-10-17 Tue>
+#+REVEAL_HLEVEL: 1
+#+REVEAL_THEME: solarized
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+OPTIONS: toc:nil num:nil
+# #+OPTIONS: author:nil timestamp:nil
+# #+OPTIONS: reveal_title_slide:"<h1>%t</h1><h2>%a</h2><h2>%e</h2><h2>%d</h2>"
+# #+OPTIONS: reveal_title_slide:nil
+
+# Suppress the normal customized CSS I use with org:
+#+HTML_HEAD:
+
+# #+COLUMNS: %8TODO %10WHO %3PRIORITY %3HOURS(HRS) %80ITEM
+# #+INFOJS_OPT: view:showall toc:t ltoc:nil path:../org-info.js mouse:#B3F2E3
+  #+END_EXAMPLE
