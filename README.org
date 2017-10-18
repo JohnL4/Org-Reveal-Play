@@ -27,7 +27,7 @@ Or
 # #+OPTIONS: reveal_title_slide:"<h1>%t</h1><h2>%a</h2><h2>%e</h2><h2>%d</h2>"
 # #+OPTIONS: reveal_title_slide:nil
 
-# Suppress the normal customized CSS I use with org:
+# Suppress the normal customized CSS I use with org (by making it empty):
 #+HTML_HEAD:
 
 # #+COLUMNS: %8TODO %10WHO %3PRIORITY %3HOURS(HRS) %80ITEM
